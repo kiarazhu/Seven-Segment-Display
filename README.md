@@ -45,7 +45,7 @@ Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We w
 
 My I/O board has two seven-segment displays, but only one display can be illuminated at a time. With this limitation, is it possible to display a two-digit number?
 
-Yes, but technically no; we can flick really fast between the two digits so that both appear to be simultaneously illuminated. 
+Yes, but technically no; we can flick really fast between the two digits so that they appear to be simultaneously illuminated. 
 
 ### Using a 7-bit Binary Input
 
