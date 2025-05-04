@@ -9,7 +9,7 @@ Using a seven segment display, we can display the decimal digits 0-9 like so:
 
 Now we can write a truth table that indicates each digit's truth values for segments 'a' to 'g':
 <img width="500" alt="image2" src="https://github.com/user-attachments/assets/98852c33-7981-433a-924c-b1ebf9d7aa72" />
-
+(DP = Decimal Point display; we will always set it as 0 for today.)
 
 Let's make some digits!
 
