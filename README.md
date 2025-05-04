@@ -11,11 +11,11 @@ The individual segments of the seven-segment display are labelled 'a' to 'g'. Us
 Now we can write a truth table that indicates each digit's truth values for segments 'a' to 'g':
 <img width="500" alt="image2" src="https://github.com/user-attachments/assets/98852c33-7981-433a-924c-b1ebf9d7aa72" />
 
-(DP = Decimal Point display; we don't need this today, so we'll keep it as 0.)
+(DP = Decimal Point display; we don't need this for our purposes, so we'll keep it as 0.)
 
 Let's make some digits!
 
-Here, I've connected input switches (S0 to S6) to segments 'a' to 'g' respectively (as well as S7 to DP). We can configure the switches according to the truth table above to display any digit:
+On my I/O board, I've connected input switches (S0 to S6) to segments 'a' to 'g' respectively (as well as S7 to DP). We can configure the switches according to the truth table above to display any digit:
 
 <img width="180" alt="0" src="https://github.com/user-attachments/assets/78065385-211c-47cf-b68f-778a7f9795f1"/>
 <img width="180" alt="1" src="https://github.com/user-attachments/assets/343809f9-c43b-42f5-8770-4f5fb3bae021"/>
@@ -39,7 +39,14 @@ Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We w
 
 <img height="300" alt="image4" src="https://github.com/user-attachments/assets/cd005e23-833f-4bd8-965c-9454e1ac107f" />
 
-(Description of the code and microcontroller). See `single_digit.c`.
+To map each input to its output, I'm using the ATmega324A microchip. The microchip was programmed using `single_digit.c`, which does the following:
+
+1. Set port C pins to be inputs and connect them to switches S0 to S3.
+2. Set port A pins to be outputs and connect them to the seven-segment display.
+3. Create a perpetual loop so that the microcontroller is always listening / handling events.
+4. Mask out the upper bits of port C to obtain the 4-bit binary representation of the digit to display (we are only interested in pins C0-C3).
+5. If the digit is between 0-9 inclusive, output its corresponding seven segment value to port A pins. Otherwise, display nothing.
+6. Repeat from Step 4.
 
 <img width="180" alt="0" src="https://github.com/user-attachments/assets/50b9f41f-2d79-4cf6-9f78-1de746a818c2"/>
 <img width="180" alt="1" src="https://github.com/user-attachments/assets/0a07bbcd-36ce-485e-9a64-d24fff06580c"/>
@@ -52,11 +59,13 @@ Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We w
 <img width="180" alt="8" src="https://github.com/user-attachments/assets/842e5e36-5194-44c3-9f0c-fbf7e022bce8"/>
 <img width="180" alt="9" src="https://github.com/user-attachments/assets/687e0489-1fcd-4631-9f8b-f772fc1234ef"/>
 
+Yippee! We can display single digits using a 4-digit binary input.
+
 ## Displayng Numbers 0 - 99
 
-My I/O board has two seven-segment displays, but only one display can be illuminated at a time. With this limitation, is it possible to display a two-digit number?
+My I/O board has two seven-segment displays, but only one display can be illuminated at a time. Given this limitation, is it possible to display a two-digit number?
 
-Yes, but technically no; we can flick really fast between the two digits so that they appear to be simultaneously illuminated. 
+Yes, but technically no. What we can do is flick really fast between the two digits so that they appear to be simultaneously illuminated. 
 
 ### Using a 7-bit Binary Input
 
