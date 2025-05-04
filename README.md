@@ -34,6 +34,9 @@ Huzzah; we can display the digits 0-9. Though, the correspondence between input 
 
 What if we change the required input to have some semantic meaning? 
 
+### Using a 4-bit Binary Input
+
+
 ## Displayng Numbers 0 - 99
 
 My I/O board has two seven-segment displays, but only one display can be illuminated at a time. With this limitation, is it possible to display a two-digit number?
