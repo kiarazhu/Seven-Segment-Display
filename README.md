@@ -14,32 +14,22 @@ Now we can write a truth table that indicates each digit's truth values for segm
 
 Let's make some digits!
 
-Here, I've connected input switches (S0 to S6) to segments 'a' to 'g' respectively (as well as S7 to DP). Using the values from the truth table above, we can configure the switches to display any digit:
+Here, I've connected input switches (S0 to S6) to segments 'a' to 'g' respectively (as well as S7 to DP). We can configure the switches according to the truth table above to display any digit:
 
-![0](https://github.com/user-attachments/assets/78065385-211c-47cf-b68f-778a7f9795f1)
+<img width="180" alt="0" src="https://github.com/user-attachments/assets/78065385-211c-47cf-b68f-778a7f9795f1"/>
+<img width="180" alt="1" src="https://github.com/user-attachments/assets/343809f9-c43b-42f5-8770-4f5fb3bae021"/>
+<img width="180" alt="2" src="https://github.com/user-attachments/assets/c970329c-9e63-422b-876b-8e60d9aa7b51"/>
+<img width="180" alt="3" src="https://github.com/user-attachments/assets/823acfbe-e965-4d33-b842-6b6ccb148f95"/>
+<img width="180" alt="4" src="https://github.com/user-attachments/assets/ec9a5012-d362-4a18-beaa-ff741f7435ca"/>
 
-![1](https://github.com/user-attachments/assets/343809f9-c43b-42f5-8770-4f5fb3bae021)
+<img width="180" alt="5" src="https://github.com/user-attachments/assets/b72ad0e5-7b9a-4279-aa3a-ee8400548f3a"/>
+<img width="180" alt="6" src="https://github.com/user-attachments/assets/475fac8d-d27a-4023-a3b2-0600fda64f8c"/>
+<img width="180" alt="7" src="https://github.com/user-attachments/assets/b19e998d-d971-4640-b63c-4ed90cef8da9"/>
+<img width="180" alt="8" src="https://github.com/user-attachments/assets/84645e3c-38b6-4006-8937-046d37dacaa4"/>
+<img width="180" alt="9" src="https://github.com/user-attachments/assets/1877ff79-e8c4-4133-b8db-b29729bf88aa"/>
 
-![2](https://github.com/user-attachments/assets/c970329c-9e63-422b-876b-8e60d9aa7b51)
+Huzzah; we can display the digits 0-9. Though, the correspondence between input and digit is quite unintuitive, and I doubt the user has the time to create a truth table.
 
-![3](https://github.com/user-attachments/assets/823acfbe-e965-4d33-b842-6b6ccb148f95)
-
-![4](https://github.com/user-attachments/assets/ec9a5012-d362-4a18-beaa-ff741f7435ca)
-
-![5](https://github.com/user-attachments/assets/b72ad0e5-7b9a-4279-aa3a-ee8400548f3a)
-
-![6](https://github.com/user-attachments/assets/475fac8d-d27a-4023-a3b2-0600fda64f8c)
-
-![7](https://github.com/user-attachments/assets/b19e998d-d971-4640-b63c-4ed90cef8da9)
-
-![8](https://github.com/user-attachments/assets/84645e3c-38b6-4006-8937-046d37dacaa4)
-
-![9](https://github.com/user-attachments/assets/1877ff79-e8c4-4133-b8db-b29729bf88aa)
-
-
-Huzzah; we can display the digits 0-9. Though, I don't think that inputting 01111101 to display a 6 is very intuitive.
-
-What if we wrote some code such that the input has some semantic meaning? 
-
+What if we change the required input to have some semantic meaning? 
 
 
