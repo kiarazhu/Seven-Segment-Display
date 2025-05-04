@@ -39,7 +39,18 @@ Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We w
 
 <img height="300" alt="image4" src="https://github.com/user-attachments/assets/cd005e23-833f-4bd8-965c-9454e1ac107f" />
 
+(Description of the code and microcontroller). See `single_digit.c`.
 
+<img width="180" alt="0" src="https://github.com/user-attachments/assets/50b9f41f-2d79-4cf6-9f78-1de746a818c2"/>
+<img width="180" alt="1" src="https://github.com/user-attachments/assets/0a07bbcd-36ce-485e-9a64-d24fff06580c"/>
+<img width="180" alt="2" src="https://github.com/user-attachments/assets/471a856f-f5dd-4170-b7a1-ecba67e4a526"/>
+<img width="180" alt="3" src="https://github.com/user-attachments/assets/21df8d74-61b9-442f-ac7d-e5244655fffc"/>
+<img width="180" alt="4" src="https://github.com/user-attachments/assets/27d2ba2d-0a1a-4f88-8560-5b348248882b"/>
+<img width="180" alt="5" src="https://github.com/user-attachments/assets/e8506522-b745-4667-9020-f254906c9352"/>
+<img width="180" alt="6" src="https://github.com/user-attachments/assets/ef7e815c-b949-4600-a72e-efb713063729"/>
+<img width="180" alt="7" src="https://github.com/user-attachments/assets/4ccd0d3d-7584-4eec-90a5-bc9ba7fd44f9"/>
+<img width="180" alt="8" src="https://github.com/user-attachments/assets/842e5e36-5194-44c3-9f0c-fbf7e022bce8"/>
+<img width="180" alt="9" src="https://github.com/user-attachments/assets/687e0489-1fcd-4631-9f8b-f772fc1234ef"/>
 
 ## Displayng Numbers 0 - 99
 
