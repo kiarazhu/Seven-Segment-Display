@@ -1,5 +1,7 @@
 # Seven-Segment-Display
 
+## Displaying Numbers 0-9
+
 The individual segments of the display are labelled 'a' to 'g' as follows:
 
 <img width="200" alt="image0" src="https://github.com/user-attachments/assets/1f0a866b-85b8-4f42-8091-5361f09630cb"/>
@@ -32,4 +34,8 @@ Huzzah; we can display the digits 0-9. Though, the correspondence between input 
 
 What if we change the required input to have some semantic meaning? 
 
+## Displayng Numbers 0 - 99
 
+My I/O board has two seven-segment displays, but only one display can be illuminated at a time. With this limitation, is it possible to display a two-digit number?
+
+Yes, but technically no; we can flick really fast between the two digits so that both appear to be simultaneously illuminated. 
