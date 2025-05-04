@@ -4,8 +4,8 @@
 
 The individual segments of the seven-segment display are labelled 'a' to 'g'. Using a seven segment display, we can display the decimal digits 0-9 like so:
 
-<img height="300" alt="image0" src="https://github.com/user-attachments/assets/1f0a866b-85b8-4f42-8091-5361f09630cb"/>
-<img height="300" alt="image1" src="https://github.com/user-attachments/assets/c3ccc150-4fce-4d7a-bfbd-c03f84a2f4a7" />
+<img height="200" alt="image0" src="https://github.com/user-attachments/assets/1f0a866b-85b8-4f42-8091-5361f09630cb"/>
+<img height="200" alt="image1" src="https://github.com/user-attachments/assets/c3ccc150-4fce-4d7a-bfbd-c03f84a2f4a7" />
 
 
 Now we can write a truth table that indicates each digit's truth values for segments 'a' to 'g':
