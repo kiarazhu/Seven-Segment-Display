@@ -1,4 +1,4 @@
-# Seven-Segment-Display
+# Seven Segment Display
 
 ## Displaying Numbers 0-9
 
