@@ -37,8 +37,7 @@ What if we change the required input to have some semantic meaning?
 
 ### Using a 4-bit Binary Input
 
-Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We will modify our display to take a 4-bit binary input from switches S0 (LSB) to S3 (MSB). 
-
+Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We will modify our display to take a 4-bit binary input from switches S0 (LSB) to S3 (MSB). Given the segment truth values that we found earlier, we can get the display value for each digit:
 
 <img height="300" alt="image4" src="https://github.com/user-attachments/assets/cd005e23-833f-4bd8-965c-9454e1ac107f" />
 
