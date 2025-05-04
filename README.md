@@ -39,7 +39,8 @@ What if we change the required input to have some semantic meaning?
 
 
 <img width="214" alt="image3" src="https://github.com/user-attachments/assets/f596812f-d8d6-4702-83be-33224323a68e"/>
-<img width="278" alt="image4" src="https://github.com/user-attachments/assets/28b50ae2-fcb7-4216-8d3f-cc0b7e73ebec" />
+<img width="275" alt="image4" src="https://github.com/user-attachments/assets/cd005e23-833f-4bd8-965c-9454e1ac107f" />
+
 
 
 ## Displayng Numbers 0 - 99
