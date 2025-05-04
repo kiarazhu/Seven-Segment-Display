@@ -18,7 +18,7 @@ int main(void) {
 		if (digit < 10) {
 			PORTA = seven_seg[digit];    // Display the digit
 			} else {
-			PORTA = 0;    // Display nothing
+			PORTA = 0;    // Turn off display
 		}
 	}
 }
