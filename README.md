@@ -71,4 +71,24 @@ Yes, but technically no. What we can do is flick really fast between the two dig
 
 Since we are now displaying 0 to 99 (0000000 to 1100011), we need a 7-bit binary input.
 
-The microchip's programming was extended using `double_digit.c`.
+The microchip's programming was extended using `double_digit.c`. Here are some additional changes from `single_digit.c`:
+
+- The port C input pins are now connected to seven switches to represent the 7-bit binary input.
+- The input is read as a decimal value and decomposed into its tens and units digit.
+- There is an additional input at D0 that functions as a signal to determine whether the tens or units digit is illuminated.
+- The output value at port A oscillates between the seven-segment display values of the tens' digit and the units' digit. 
+
+Here are a few examples of double digit displays:
+
+<img width="180" alt="0" src="https://github.com/user-attachments/assets/a4e6a7f0-9876-4482-9f72-1f4d11fa9452"/>
+<img width="180" alt="1" src="https://github.com/user-attachments/assets/74d102e9-35bf-488f-a1a0-6e5b20ed1520"/>
+<img width="180" alt="2" src="https://github.com/user-attachments/assets/5e16d3c3-f717-4143-b5d3-fd0c425d6c71"/>
+<img width="180" alt="3" src="https://github.com/user-attachments/assets/958da6ee-72b4-41fc-bc41-b23ff6de8275"/>
+<img width="180" alt="4" src="https://github.com/user-attachments/assets/9c797875-3ffc-4dda-b4e7-ee03681a721b"/>
+<img width="180" alt="5" src="https://github.com/user-attachments/assets/cfcd2754-f7f8-4ea0-8b41-29ea77becd51"/>
+<img width="180" alt="6" src="https://github.com/user-attachments/assets/6bd85ac3-d623-404d-ae7b-2028ae9bf4f2"/>
+<img width="180" alt="7" src="https://github.com/user-attachments/assets/0dcc1afb-2b1d-48a5-93e6-4432b96beb4e"/>
+<img width="180" alt="8" src="https://github.com/user-attachments/assets/2137387d-7d67-441f-b58a-a45ad754d46e"/>
+<img width="180" alt="9" src="https://github.com/user-attachments/assets/8ab0c910-df07-4ce3-8416-7760f4a6d27b"/>
+
+Nice!
