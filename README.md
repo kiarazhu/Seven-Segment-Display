@@ -14,10 +14,12 @@ Now we can write a truth table that indicates each digit's truth values for segm
 
 Let's make some digits!
 
-Here, I've connected switches S0 to S6 to segments 'a' to 'g' respectively (as well as S7 to DP).
+Here, I've attached an I/O board to a breadbord and connected switches S0 to S6 to segments 'a' to 'g' respectively (as well as S7 to DP). Using the values from the truth table above, we can configure the switches to display a digit:
 
 
-Huzzah; we have displayed the digits 0-9. Though, I don't think that inputting 01111101 to display a 6 is very intuitive.
+
+
+Huzzah; we can display the digits 0-9. Though, I don't think that inputting 01111101 to display a 6 is very intuitive.
 
 What if we wrote some code such that the input has some semantic meaning? 
 
