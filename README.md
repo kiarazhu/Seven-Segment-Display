@@ -29,7 +29,7 @@ Here, I've connected input switches (S0 to S6) to segments 'a' to 'g' respective
 <img width="180" alt="8" src="https://github.com/user-attachments/assets/84645e3c-38b6-4006-8937-046d37dacaa4"/>
 <img width="180" alt="9" src="https://github.com/user-attachments/assets/1877ff79-e8c4-4133-b8db-b29729bf88aa"/>
 
-Huzzah; we can display the digits 0-9. Though, the correspondence between input and digit is quite unintuitive, and I doubt the user has the time to create a truth table.
+Huzzah; we can display the digits 0-9. Though, the correspondence between input and digit is quite unintuitive.
 
 What if we change the required input to have some semantic meaning? 
 
