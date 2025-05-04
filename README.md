@@ -65,8 +65,10 @@ Yippee! We can display single digits using a 4-digit binary input.
 
 My I/O board has two seven-segment displays, but only one display can be illuminated at a time. Given this limitation, is it possible to display a two-digit number?
 
-Yes, but technically no. What we can do is flick really fast between the two digits so that they appear to be simultaneously illuminated. 
+Yes, but technically no. What we can do is flick really fast between the two digits so that they appear to be simultaneously illuminated. To do so, we require an additional signal output that oscillates between high and low to control the digit being displayed.
 
 ### Using a 7-bit Binary Input
 
 Since we are now displaying 0 to 99 (0000000 to 1100011), we need a 7-bit binary input.
+
+The microchip's programming was extended using `double_digit.c`.
