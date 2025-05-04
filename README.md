@@ -15,7 +15,7 @@ Now we can write a truth table that indicates each digit's truth values for segm
 
 Let's make some digits!
 
-On my I/O board, I've connected input switches (S0 to S6) to segments 'a' to 'g' respectively (as well as S7 to DP). We can configure the switches according to the truth table above to display any digit:
+On my I/O board, I've connected seven input switches to segments 'a' to 'g' respectively (as well as a trivial eighth switch to DP). We can configure the switches according to the truth table above to display any digit:
 
 <img width="180" alt="0" src="https://github.com/user-attachments/assets/78065385-211c-47cf-b68f-778a7f9795f1"/>
 <img width="180" alt="1" src="https://github.com/user-attachments/assets/343809f9-c43b-42f5-8770-4f5fb3bae021"/>
@@ -35,13 +35,13 @@ What if we change the required input to have some semantic meaning?
 
 ### Using a 4-bit Binary Input
 
-Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We will modify our display to take a 4-bit binary input from switches S0 (LSB) to S3 (MSB). Given the segment truth values that we found earlier, we can get the display value for each digit:
+Each digit from 0 to 9 corresponds to a 4-bit binary number (0000 to 1001). We will modify our display to take a 4-bit binary input from four switches. Given the segment truth values that we found earlier, we can get the display value for each digit:
 
 <img height="300" alt="image4" src="https://github.com/user-attachments/assets/cd005e23-833f-4bd8-965c-9454e1ac107f" />
 
 To map each input to its output, I'm using the ATmega324A microchip. The microchip was programmed using `single_digit.c`, which does the following:
 
-1. Set port C pins to be inputs and connect them to switches S0 to S3.
+1. Set port C pins to be inputs and connect them to four switches.
 2. Set port A pins to be outputs and connect them to the seven-segment display.
 3. Create a perpetual loop so that the microcontroller is always listening / handling events.
 4. Mask out the upper bits of port C to read pins C0-C3, and hence obtain our 4-bit input.
