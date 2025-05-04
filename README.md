@@ -44,8 +44,8 @@ To map each input to its output, I'm using the ATmega324A microchip. The microch
 1. Set port C pins to be inputs and connect them to switches S0 to S3.
 2. Set port A pins to be outputs and connect them to the seven-segment display.
 3. Create a perpetual loop so that the microcontroller is always listening / handling events.
-4. Mask out the upper bits of port C to obtain the 4-bit binary representation of the digit to display (we are only interested in pins C0-C3).
-5. If the digit is between 0-9 inclusive, output its corresponding seven segment value to port A pins. Otherwise, display nothing.
+4. Mask out the upper bits of port C to read pins C0-C3, and hence obtain our 4-bit input.
+5. If the digit is between 0-9 inclusive, output its corresponding seven segment value to port A to display the digit. Otherwise, output 0 to display nothing.
 6. Repeat from Step 4.
 
 <img width="180" alt="0" src="https://github.com/user-attachments/assets/50b9f41f-2d79-4cf6-9f78-1de746a818c2"/>
