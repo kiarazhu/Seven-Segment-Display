@@ -42,3 +42,7 @@ What if we change the required input to have some semantic meaning?
 My I/O board has two seven-segment displays, but only one display can be illuminated at a time. With this limitation, is it possible to display a two-digit number?
 
 Yes, but technically no; we can flick really fast between the two digits so that both appear to be simultaneously illuminated. 
+
+### Using a 7-bit Binary Input
+
+Since 99 in binary is 0b1100011, we need a 7-bit binary input (we are using switches S0-S6 to determine the number to dispay, so 7 is the perfect number of bits!).
