@@ -69,4 +69,4 @@ Yes, but technically no. What we can do is flick really fast between the two dig
 
 ### Using a 7-bit Binary Input
 
-Since we are now displaying 0 to 99 (0000000 to 1100011), we need a 7-bit binary input; we will use switches S0-S6.
+Since we are now displaying 0 to 99 (0000000 to 1100011), we need a 7-bit binary input.
