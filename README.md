@@ -92,8 +92,3 @@ Here are a few examples of double digit displays:
 <img width="180" alt="9" src="https://github.com/user-attachments/assets/8ab0c910-df07-4ce3-8416-7760f4a6d27b"/>
 
 Nice!
-
-
-### Counting from 0 - 99
-
-Coming soon...
