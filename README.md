@@ -97,7 +97,3 @@ Nice!
 ### Counting from 0 - 99
 
 Coming soon...
-
-### Using buttons to increment forwards or backwards
-
-Coming soon...
