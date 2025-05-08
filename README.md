@@ -92,3 +92,5 @@ Here are a few examples of double digit displays:
 <img width="180" alt="9" src="https://github.com/user-attachments/assets/8ab0c910-df07-4ce3-8416-7760f4a6d27b"/>
 
 Nice!
+
+See how the seven segment display can be used in conjunction with timers/counters and interrupts to create a <a href="https://github.com/kiarazhu/Stopwatch/tree/main"> stopwatch</a> !
